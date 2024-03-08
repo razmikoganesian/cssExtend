@@ -12,9 +12,13 @@
 @import "./components/feature-box";
 @import "./components/card";
 @import "./components/story";
-@import "./layout/header";
-@import "./layout/grid";
 @import "./components/bg-video";
 @import "./components/book";
+
+@import "./layout/header";
+@import "./layout/grid";
+@import "./layout/footer";
+@import "./layout/navigation";
+@import "./layout/popup";
 
 @import "./pages/home";
