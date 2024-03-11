@@ -4,13 +4,18 @@
   margin-top: -10vh;
   height: 100rem;
   margin-bottom: 10vh;
+
+  @include respond(phone) {
+    margin-top: -5vh;
+    height: 100rem;
+  }
 }
 
 .section-features {
-  height: 70rem;
-  margin-top: -20rem;
+  // height: 70rem;
+  margin-top: -5rem;
 
-  padding: 20rem 0;
+  padding: 15rem 0;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.805),
@@ -28,19 +33,20 @@
 .section-tours {
   background-color: $color-grey-light-1;
   padding: 15rem 0 10rem 0;
-  margin-top: -10vh;
-  height: 60rem;
+  margin-top: 0;
+  height: auto;
+  // height: 75vh;
 }
 
 .section-stories {
-  margin-top: 35rem;
   padding: 15rem 0;
   // background-color: $color-grey-light-1;
   position: relative;
+  margin-top: 25rem;
 }
 
 .section-book {
-  padding: 15rem 0;
+  padding: 5rem 0;
   background-image: linear-gradient(
     to right bottom,
     $color-primary-light,

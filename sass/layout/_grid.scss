@@ -1,28 +1,42 @@
 .row {
   // default 1140 px
   max-width: $grid-width;
-  margin: 0 auto;
+  margin: 5rem auto;
   color: $color-grey-dark;
   font-weight: 500;
-  // height: 50rem;
+  // height: 50vh;
 
-  // margin-bottom: $gutter-vertical;
-  // &:last-child {
-  //   margin-bottom: 0rem;
-  // }
+  @include respond(tablet-landscape) {
+    max-width: 95%;
+  }
+
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(phone) {
+      margin-bottom: 6rem;
+    }
   }
 
   @include clearfix;
 
   [class^="col-"] {
     height: 4rem;
+    float: left;
+
+    @include respond(phone) {
+      width: 100% !important;
+      height: auto;
+    }
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(phone) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+      }
     }
-    float: left;
   }
 
   .col-1-of-2 {

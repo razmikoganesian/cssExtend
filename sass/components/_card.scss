@@ -2,6 +2,11 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
+  height: inherit;
+
+  @include respond(phone) {
+    margin-bottom: 5rem;
+  }
 
   &__side {
     height: 52rem;
